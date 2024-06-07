@@ -1,9 +1,9 @@
 {
     "name": "devuri/site-maintenance",
     "description": "Site Maintenance",
-	"type": "wordpress-plugin",
-	"minimum-stability": "dev",
-	"prefer-stable": true,
+    "type": "wordpress-plugin",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "keywords": [
         "WordPress",
         "Options",
@@ -22,15 +22,15 @@
         "php": "^7.3 || ^7.4 || ^8.0 || ^8.1",
         "ext-curl": "*",
         "ext-json": "*",
-		"devuri/plugin-interface": "^0.2.0"
+        "devuri/plugin-interface": "^0.2.0"
     },
     "autoload": {
         "psr-4": {
             "SimSiteMaintenance\\": "src/SimSiteMaintenance/"
         },
-		"files": [
-			"src/SimSiteMaintenance/inc/helpers.php"
-		]
+        "files": [
+            "src/SimSiteMaintenance/inc/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
