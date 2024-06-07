@@ -17,7 +17,7 @@ parameters:
         - languages/*
         - vendor/*
     scanFiles:
-        - site-maintenance.php
+        - sim-site-maintenance.php
     paths:
         - src
         - tests

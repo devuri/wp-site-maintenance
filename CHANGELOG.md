@@ -1,13 +1,13 @@
 # Changelog
 
-## [0.2.3](https://github.com/devuri/wp-site-maintenance/compare/0.2.2...0.2.3) (2024-06-07)
+## [0.2.3](https://github.com/devuri/wp-site-maintenance/compare/0.2.5...0.2.3) (2024-06-07)
 
 
 ### Miscellaneous Chores
 
-* **main:** release 0.2.2 ([601d24d](https://github.com/devuri/wp-site-maintenance/commit/601d24dbe0f1e09110250dd76d837c0bbc9cc388))
+* **main:** release 0.2.5 ([601d24d](https://github.com/devuri/wp-site-maintenance/commit/601d24dbe0f1e09110250dd76d837c0bbc9cc388))
 
-## [0.2.2](https://github.com/devuri/wp-site-maintenance/compare/v0.2.1...0.2.2) (2024-06-07)
+## [0.2.5](https://github.com/devuri/wp-site-maintenance/compare/v0.2.1...0.2.5) (2024-06-07)
 
 
 ### Bug Fixes
@@ -18,4 +18,4 @@
 
 ### Miscellaneous Chores
 
-* version bump 0.2.2 ([84a4c12](https://github.com/devuri/wp-site-maintenance/commit/84a4c127d1b99e65f39a740f6171f1bb75cfc69b))
+* version bump 0.2.5 ([84a4c12](https://github.com/devuri/wp-site-maintenance/commit/84a4c127d1b99e65f39a740f6171f1bb75cfc69b))

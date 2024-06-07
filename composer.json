@@ -1,5 +1,5 @@
 {
-    "name": "devuri/site-maintenance",
+    "name": "devuri/sim-site-maintenance",
     "description": "Site Maintenance",
     "type": "wordpress-plugin",
     "minimum-stability": "dev",
@@ -57,17 +57,17 @@
         "wpcs-lint": [
             "composer install -q",
             "phpcs -ns src",
-            "phpcs -ns site-maintenance.php"
+            "phpcs -ns sim-site-maintenance.php"
         ],
         "wpcs-lint-all": [
             "composer install -q",
             "phpcs -s src",
-            "phpcs -ns site-maintenance.php"
+            "phpcs -ns sim-site-maintenance.php"
         ],
         "wpcs-fix": [
             "composer install -q",
             "phpcbf src",
-            "phpcbf site-maintenance.php",
+            "phpcbf sim-site-maintenance.php",
             "phpcbf uninstall.php"
         ],
         "test": [
@@ -117,7 +117,7 @@
         ],
         "php-compat": [
             "composer install",
-            "vendor/bin/phpcs site-maintenance.php src/ --standard=PHPCompatibilityWP --extensions=php --runtime-set testVersion 7.3-"
+            "vendor/bin/phpcs sim-site-maintenance.php src/ --standard=PHPCompatibilityWP --extensions=php --runtime-set testVersion 7.3-"
         ],
         "psalm": "vendor/bin/psalm",
         "psalm-secure": "vendor/bin/psalm --taint-analysis",

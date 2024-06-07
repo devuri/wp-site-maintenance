@@ -1,15 +1,15 @@
 <?php
 /**
  * @wordpress-plugin
- * Plugin Name:        Site Maintenance
+ * Plugin Name:        Sim Site Maintenance
  * Plugin URI:        https://urielwilson.com/
  * Description:       Puts the site in maintenance mode for all non-logged-in users.
- * Version:           0.2.2
+ * Version:           0.2.5
  * Requires at least: 4.0
  * Requires PHP:      7.3
  * Author:            uriel
  * Author URI:        https://urielwilson.com
- * Text Domain:       site-maintenance
+ * Text Domain:       sim-site-maintenance
  * License:           GPLv2
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  */
