@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.3](https://github.com/devuri/wp-site-maintenance/compare/0.2.2...0.2.3) (2024-06-07)
+
+
+### Miscellaneous Chores
+
+* **main:** release 0.2.2 ([601d24d](https://github.com/devuri/wp-site-maintenance/commit/601d24dbe0f1e09110250dd76d837c0bbc9cc388))
+
 ## [0.2.2](https://github.com/devuri/wp-site-maintenance/compare/v0.2.1...0.2.2) (2024-06-07)
 
 
