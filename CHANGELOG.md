@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.4](https://github.com/devuri/wp-site-maintenance/compare/0.2.3...0.2.4) (2024-06-07)
+
+
+### Bug Fixes
+
+* change plugin name ([4a0a37a](https://github.com/devuri/wp-site-maintenance/commit/4a0a37a772987a0d930e09dc88892c8a52862395))
+
+
+### Miscellaneous Chores
+
+* readme updates ([bd4015e](https://github.com/devuri/wp-site-maintenance/commit/bd4015e0f2c9def140e7055fd28ab34332cbe86f))
+
 ## [0.2.3](https://github.com/devuri/wp-site-maintenance/compare/0.2.5...0.2.3) (2024-06-07)
 
 
