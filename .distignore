@@ -38,4 +38,4 @@ phpunit.xml
 rules.neon
 README.md
 webpack.mix.js
-shortcode-options.zip
+site-maintenance.zip
