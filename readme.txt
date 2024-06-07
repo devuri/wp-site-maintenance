@@ -31,23 +31,26 @@ Yes, you can customize the maintenance message and header from the Settings -> M
 
 No, logged-in users with the capability to edit themes will not see the maintenance message and will have full access to the site.
 
+= Can I turn off maintenance mode? =
+
+Yes, you can enable or disable maintenance mode from the Settings -> Maintenance Mode page in the WordPress admin dashboard.
+
 == Screenshots ==
 
-1. Settings page to customize maintenance message and header.
+1. Settings page to customize maintenance mode, message, and header.
 
 == Changelog ==
 
 = 0.2.2 =
+* Added on/off switch to enable and disable maintenance mode.
+
+= 0.2.0 =
 * Initial release.
 
 == Upgrade Notice ==
 
 = 0.2.2 =
-* Initial release.
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, such as one titled "Support" to give more information about how to get support for your plugin.
+* Added on/off switch to enable and disable maintenance mode.
 
 == License ==
 
