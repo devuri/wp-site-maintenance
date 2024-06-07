@@ -1,57 +1,54 @@
-=== Shortcode Options ===
+=== Site Maintenance ===
 Contributors: icelayer
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6D6W2KXB88NKE
-Tags: options, shortcode
-Requires at least: 3.4
-Tested up to: 6.2
-Stable tag: 0.1.0
+Donate link: https://urielwilson.com/
+Tags: maintenance, maintenance mode, under construction
+Requires at least: 4.0
+Tested up to: 6.4
 Requires PHP: 7.3
-License: GPLv2
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Stable tag: 0.2.1
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-The Shortcode Options plugin is a simple way to display WordPress Options using a shortcode.
+Puts the site in maintenance mode for all non-logged-in users.
 
 == Description ==
 
-WordPress uses options to store a wide range of preferences and configuration settings. These options are essential for WordPress to function smoothly. By default, WordPress installs come with a set of predefined options that are used to manage various aspects of the site.
-
-If you want to easily display WordPress options on your site, the WP Options Shortcode plugin can help. With this plugin, you can display WP Options using shortcodes, making it easy to showcase important information on your website.
-
-To use the plugin, simply insert the shortcode **[wpoption opt=”blogname”]** wherever you want the option to appear. You can customize the shortcode to display any option you need, such as the site URL or the number of posts per page.
-
-The WP Options Shortcode plugin offers a simple and efficient way to display WordPress options on your site. With this plugin, you can easily access important information without having to navigate through the WordPress backend.
-
-Options are pieces of data that WordPress uses to store various preferences and configuration settings. Listed below are the options, along with some of the default values from the current WordPress install. You can reference list of options here: Codex Option Reference..
-
-
-
-This plugin is a simple way to display WP Options using shortcode:
-**[wpoption opt="blogname"]**
-
-[Check Options Reference](https://codex.wordpress.org/Option_Reference).
-
-Use the **[wpoption opt="blogname"]** shortcode to display any WordPress Option. This plugin is a simple way to display WP Options using shortcode, you can reference list of options here: [Check Options Reference](https://codex.wordpress.org/Option_Reference).
-
-= Some Available Options: =
-
-* blogname | Blog title
-* blogdescription  | Blog tagline
-* date_format | Default date format
-* home | Blog address (URL)
-* siteurl | WordPress address (URL)
-* time_format | Default time format
+Site Maintenance Mode is a simple plugin that allows you to put your WordPress site into maintenance mode. It will show a maintenance message to all non-logged-in users while allowing logged-in users to access the site normally.
 
 == Installation ==
 
-1. Upload the plugin files to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly.
-2. Activate the plugin through the 'Plugins' screen in WordPress
-3. To get started you will need to create the slides for the slider in WordPress admin menu select Add New under Slim Slides.
+1. Upload the plugin files to the `/wp-content/plugins/site-maintenance-mode` directory, or install the plugin through the WordPress plugins screen directly.
+2. Activate the plugin through the 'Plugins' screen in WordPress.
+3. Use the Settings -> Maintenance Mode screen to configure the plugin.
+
+== Frequently Asked Questions ==
+
+= Can I customize the maintenance message and header? =
+
+Yes, you can customize the maintenance message and header from the Settings -> Maintenance Mode page in the WordPress admin dashboard.
+
+= Will logged-in users see the maintenance message? =
+
+No, logged-in users with the capability to edit themes will not see the maintenance message and will have full access to the site.
 
 == Screenshots ==
 
-1. ...
+1. Settings page to customize maintenance message and header.
 
 == Changelog ==
 
+= 0.2.1 =
+* Initial release.
 
 == Upgrade Notice ==
+
+= 0.2.1 =
+* Initial release.
+
+== Arbitrary section ==
+
+You may provide arbitrary sections, such as one titled "Support" to give more information about how to get support for your plugin.
+
+== License ==
+
+This plugin is licensed under the GPLv2 or later. For more information, please see [http://www.gnu.org/licenses/gpl-2.0.html](http://www.gnu.org/licenses/gpl-2.0.html).

@@ -1,7 +1,7 @@
 <?php
 
 if ( ! \defined('SCO_DIR_PATH')) {
-    \define('SCO_DIR_PATH', "/plugins/shortcode-options/");
+    \define('SCO_DIR_PATH', "/plugins/site-maintenance/");
 }
 
 // Available unit tests only.

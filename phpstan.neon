@@ -17,7 +17,7 @@ parameters:
         - languages/*
         - vendor/*
     scanFiles:
-        - shortcode-options.php
+        - site-maintenance.php
     paths:
         - src
         - tests
