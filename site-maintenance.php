@@ -4,7 +4,7 @@
  * Plugin Name:        Site Maintenance
  * Plugin URI:        https://urielwilson.com/
  * Description:       Puts the site in maintenance mode for all non-logged-in users.
- * Version:           0.2.1
+ * Version:           0.2.2
  * Requires at least: 4.0
  * Requires PHP:      7.3
  * Author:            uriel
