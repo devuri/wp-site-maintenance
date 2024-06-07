@@ -12,5 +12,5 @@ mix.copy([
     'index.php',
     'LICENSE',
     'readme.txt',
-    'site-maintenance.php',
+    'sim-site-maintenance.php',
 ], 'build/trunk/')

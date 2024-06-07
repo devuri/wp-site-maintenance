@@ -50,7 +50,7 @@ if (is_integration_test()) {
 
     // Manually load the plugin being tested.
     tests_add_filter('muplugins_loaded', function (): void {
-        require \dirname(__FILE__, 2) . '/site-maintenance.php';
+        require \dirname(__FILE__, 2) . '/sim-site-maintenance.php';
     } );
 
     // Start up the WP testing environment.

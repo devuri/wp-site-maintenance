@@ -57,14 +57,14 @@ class Plugin extends AbstractPlugin
 
         add_settings_section(
             'smm_section',
-            __( 'Simple Maintenance Mode Settings', 'site-maintenance' ),
+            __( 'Simple Maintenance Mode Settings', 'sim-site-maintenance' ),
             [ $this, 'settings_section_callback' ],
             'smm_settings'
         );
 
         add_settings_field(
             'smm_enabled',
-            __( 'Enable Maintenance Mode', 'site-maintenance' ),
+            __( 'Enable Maintenance Mode', 'sim-site-maintenance' ),
             [ $this, 'enabled_render' ],
             'smm_settings',
             'smm_section'
@@ -72,7 +72,7 @@ class Plugin extends AbstractPlugin
 
         add_settings_field(
             'smm_header',
-            __( 'Maintenance Header', 'site-maintenance' ),
+            __( 'Maintenance Header', 'sim-site-maintenance' ),
             [ $this, 'header_render' ],
             'smm_settings',
             'smm_section'
@@ -80,7 +80,7 @@ class Plugin extends AbstractPlugin
 
         add_settings_field(
             'smm_message',
-            __( 'Maintenance Message', 'site-maintenance' ),
+            __( 'Maintenance Message', 'sim-site-maintenance' ),
             [ $this, 'message_render' ],
             'smm_settings',
             'smm_section'
@@ -113,7 +113,7 @@ class Plugin extends AbstractPlugin
 
     public function settings_section_callback(): void
     {
-        echo __( 'Customize the maintenance mode settings.', 'site-maintenance' );
+        echo __( 'Customize the maintenance mode settings.', 'sim-site-maintenance' );
     }
 
     public function options_page(): void

@@ -1,11 +1,11 @@
-=== Site Maintenance ===
+=== Sim Site Maintenance ===
 Contributors: icelayer
 Donate link: https://urielwilson.com/
 Tags: maintenance, maintenance mode, under construction
 Requires at least: 4.0
 Tested up to: 6.4
 Requires PHP: 7.3
-Stable tag: 0.2.2
+Stable tag: 0.2.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,7 +17,7 @@ Site Maintenance Mode is a simple plugin that allows you to put your WordPress s
 
 == Installation ==
 
-1. Upload the plugin files to the `/wp-content/plugins/site-maintenance-mode` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the `/wp-content/plugins/sim-site-maintenance` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress.
 3. Use the Settings -> Maintenance Mode screen to configure the plugin.
 
@@ -41,7 +41,7 @@ Yes, you can enable or disable maintenance mode from the Settings -> Maintenance
 
 == Changelog ==
 
-= 0.2.2 =
+= 0.2.5 =
 * Added on/off switch to enable and disable maintenance mode.
 
 = 0.2.0 =
@@ -49,7 +49,7 @@ Yes, you can enable or disable maintenance mode from the Settings -> Maintenance
 
 == Upgrade Notice ==
 
-= 0.2.2 =
+= 0.2.5 =
 * Added on/off switch to enable and disable maintenance mode.
 
 == License ==
