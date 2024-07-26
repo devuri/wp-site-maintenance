@@ -3,7 +3,7 @@ Contributors: icelayer
 Donate link: https://urielwilson.com/
 Tags: maintenance, maintenance mode, under construction
 Requires at least: 4.0
-Tested up to: 6.4
+Tested up to: 6.6
 Requires PHP: 7.3
 Stable tag: 0.2.5
 License: GPLv2 or later

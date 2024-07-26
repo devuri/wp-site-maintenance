@@ -113,7 +113,7 @@ class Plugin extends AbstractPlugin
 
     public function settings_section_callback(): void
     {
-        echo __( 'Customize the maintenance mode settings.', 'sim-site-maintenance' );
+        echo esc_html__( 'Customize the maintenance mode settings.', 'sim-site-maintenance' );
     }
 
     public function options_page(): void
