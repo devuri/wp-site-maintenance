@@ -122,7 +122,7 @@ class Plugin extends AbstractPlugin
 	        <form action="options.php" method="post">
 	            <h2>Simple Maintenance Mode</h2>
 	            <?php
-				settings_fields( 'simsitemaintenance_settings' );
+                settings_fields( 'simsitemaintenance_settings' );
 				do_settings_sections( 'simsitemaintenance_settings' );
 				submit_button();
 				?>
