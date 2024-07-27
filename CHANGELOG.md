@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.6](https://github.com/devuri/wp-site-maintenance/compare/0.2.5...0.2.6) (2024-07-27)
+
+
+### Bug Fixes
+
+* v0.2.6 version bump for wp reviews ([a9fa58a](https://github.com/devuri/wp-site-maintenance/commit/a9fa58ae65438b86eb8f458148f9230b6145a7dd))
+
 ## [0.2.5](https://github.com/devuri/wp-site-maintenance/compare/0.2.4...0.2.5) (2024-07-27)
 
 
