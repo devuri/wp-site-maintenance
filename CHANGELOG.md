@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.8](https://github.com/devuri/wp-site-maintenance/compare/0.2.7...0.2.8) (2024-07-27)
+
+
+### Bug Fixes
+
+* update 0.2.8 for release ([9bfcc5f](https://github.com/devuri/wp-site-maintenance/commit/9bfcc5fd0ff594f07c310b45dbec358512c2217b))
+* update Update release.yml ([a870614](https://github.com/devuri/wp-site-maintenance/commit/a870614717afd7f863a51c802ae5faa91bb7652b))
+
 ## [0.2.7](https://github.com/devuri/wp-site-maintenance/compare/0.2.6...0.2.7) (2024-07-27)
 
 
