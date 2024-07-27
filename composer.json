@@ -7,7 +7,7 @@
     "keywords": [
         "WordPress",
         "Options",
-        "Shortcode"
+        "Maintenance"
     ],
     "license": "GPL-2.0-only",
     "authors": [
@@ -52,7 +52,6 @@
         "yoast/phpunit-polyfills": "^2.0"
     },
     "scripts": {
-        "e2e": "npm run cypress",
         "wpcs": "composer wpcs-lint",
         "wpcs-lint": [
             "composer install -q",
@@ -106,9 +105,7 @@
             "composer lint",
             "composer install -q",
             "composer lint",
-            "composer no-dev -q",
-            "npm install",
-            "npm run build"
+            "composer no-dev -q"
         ],
         "no-dev": "composer install --no-dev",
         "phpstan": [
