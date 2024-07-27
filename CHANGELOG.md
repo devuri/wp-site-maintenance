@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.2.5](https://github.com/devuri/wp-site-maintenance/compare/0.2.4...0.2.5) (2024-07-27)
+
+
+### Bug Fixes
+
+* version and add `esc_html__` for wp-org review ([cacdee1](https://github.com/devuri/wp-site-maintenance/commit/cacdee15231262ff4b937706f004f5d1d8df3a14))
+* wp-org review keep composer json file in build ([76e09b9](https://github.com/devuri/wp-site-maintenance/commit/76e09b98e52eefee9d3358efab115c4c50372f83))
+* wp-org review not using prefix ([c051ab2](https://github.com/devuri/wp-site-maintenance/commit/c051ab272e7a729784d0f2edbc3760ea3bdb7fd9))
+
+
+### Miscellaneous Chores
+
+* build ([a3379d6](https://github.com/devuri/wp-site-maintenance/commit/a3379d61dba8db51b7595de274d5cf2c382a8cdc))
+* fix the keywords in composer json file ([79250db](https://github.com/devuri/wp-site-maintenance/commit/79250db174f42cdd516a7f4b32c8efb1c6eace39))
+
 ## [0.2.4](https://github.com/devuri/wp-site-maintenance/compare/0.2.3...0.2.4) (2024-06-07)
 
 
