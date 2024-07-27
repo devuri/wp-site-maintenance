@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.7](https://github.com/devuri/wp-site-maintenance/compare/0.2.6...0.2.7) (2024-07-27)
+
+
+### Bug Fixes
+
+* v bump v0.2.7 ([de9a3b3](https://github.com/devuri/wp-site-maintenance/commit/de9a3b36d40f47d847c52550a5fa5b820f8655ac))
+
 ## [0.2.6](https://github.com/devuri/wp-site-maintenance/compare/0.2.5...0.2.6) (2024-07-27)
 
 
