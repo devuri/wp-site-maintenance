@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.9](https://github.com/devuri/wp-site-maintenance/compare/0.2.8...0.2.9) (2024-07-28)
+
+
+### Bug Fixes
+
+* add svn build step with `build/svn` dir ([b04ad16](https://github.com/devuri/wp-site-maintenance/commit/b04ad16cdf423ebcebf7e9169afa143a145317ed))
+
+
+### Miscellaneous Chores
+
+* version bump 0.2.9 ([13e15f1](https://github.com/devuri/wp-site-maintenance/commit/13e15f1d90ff0f5788c79ccf35c8414e61834331))
+
 ## [0.2.8](https://github.com/devuri/wp-site-maintenance/compare/0.2.7...0.2.8) (2024-07-27)
 
 
