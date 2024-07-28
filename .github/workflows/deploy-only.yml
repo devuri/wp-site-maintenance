@@ -49,4 +49,4 @@ jobs:
             SLUG: sim-site-maintenance
             BUILD_DIR: ./build/trunk/
             INPUT_DRY_RUN: true
-            VERSION: ${{ steps.release.outputs.tag_name }}
+            VERSION: 0.2.8
