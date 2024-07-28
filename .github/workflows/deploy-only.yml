@@ -51,5 +51,5 @@ jobs:
             SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
             SLUG: sim-site-maintenance
             BUILD_DIR: ./build/trunk/
-            INPUT_DRY_RUN: false
+            INPUT_DRY_RUN: true
             VERSION: ${{ steps.release.outputs.tag_name }}
