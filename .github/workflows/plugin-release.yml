@@ -1,0 +1,27 @@
+name: 🚀 Plugin Release
+on:
+  pull_request:
+    types:
+      - closed
+  workflow_dispatch:
+
+jobs:
+  if_merged:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "The PR was merged"
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy Release
+        uses: devuri/plugin-release-deploy-action@main
+        with:
+          php-version: '7.4'
+          node-version: '16'
+          plugin-slug: 'sim-site-maintenance' # WordPress.org plugin slug
+          build-dir: './build/trunk/'
+          zip-file: 'sim-site-maintenance.zip'
+          svn-username: ${{ secrets.SVN_USERNAME }}
+          svn-password: ${{ secrets.SVN_PASSWORD }}
+          dry-run: 'false' # This is optional and defaults to 'false'
