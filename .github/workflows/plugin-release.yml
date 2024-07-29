@@ -25,4 +25,4 @@ jobs:
           svn-username: ${{ secrets.SVN_USERNAME }}
           svn-password: ${{ secrets.SVN_PASSWORD }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          dry-run: 'true' # This is optional and defaults to 'false'
+          dry-run: 'true' # This optional and defaults to 'false'
