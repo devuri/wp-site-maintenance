@@ -24,4 +24,4 @@ jobs:
           zip-file: 'sim-site-maintenance.zip'
           svn-username: ${{ secrets.SVN_USERNAME }}
           svn-password: ${{ secrets.SVN_PASSWORD }}
-          dry-run: 'false' # This is optional and defaults to 'false'
+          dry-run: 'true' # This is optional and defaults to 'false'
