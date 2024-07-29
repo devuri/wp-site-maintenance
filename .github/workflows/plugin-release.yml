@@ -1,4 +1,4 @@
-name: 🚀 Plugin Release
+name: >> Plugin Release
 on:
   pull_request:
     types:
