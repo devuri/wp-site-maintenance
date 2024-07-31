@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.11](https://github.com/devuri/wp-site-maintenance/compare/0.2.10...0.2.11) (2024-07-31)
+
+
+### Bug Fixes
+
+* tag number Update readme.txt ([17abdc5](https://github.com/devuri/wp-site-maintenance/commit/17abdc549f585846b6b9c38ecfce9f3ed5115d8c))
+* version bump Update sim-site-maintenance.php ([ba83621](https://github.com/devuri/wp-site-maintenance/commit/ba83621b9409c424f503d7e300f5844847973e39))
+
 ## [0.2.10](https://github.com/devuri/wp-site-maintenance/compare/0.2.9...0.2.10) (2024-07-31)
 
 
