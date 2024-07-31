@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.10](https://github.com/devuri/wp-site-maintenance/compare/0.2.9...0.2.10) (2024-07-31)
+
+
+### Bug Fixes
+
+* try release Update plugin-release.yml ([2b8a4a1](https://github.com/devuri/wp-site-maintenance/commit/2b8a4a12f1b6b358babb4eaf3a0d890bf3d292fe))
+* try release Update plugin-release.yml ([e7aa63a](https://github.com/devuri/wp-site-maintenance/commit/e7aa63ae461307e4005f45e6a867db540a9b5e15))
+
 ## [0.2.9](https://github.com/devuri/wp-site-maintenance/compare/0.2.8...0.2.9) (2024-07-28)
 
 
