@@ -23,25 +23,8 @@ class Plugin extends AbstractPlugin
 
     public function maintenance_mode(): void
     {
-        $is_login_register_page = \in_array( $GLOBALS['pagenow'], [ 'wp-login.php', 'wp-register.php' ], true );
-
-        if ( $is_login_register_page ) {
-            return;
-        }
-
-        $enabled = get_option( 'simsitemaintenance_enabled', false );
-
-        if ( $enabled && ( ! current_user_can( 'edit_themes' ) || ! is_user_logged_in() ) ) {
-            $message = get_option( 'simsitemaintenance_message', 'We are currently performing maintenance. Please check back later.' );
-            $header  = get_option( 'simsitemaintenance_header', 'Under Maintenance' );
-
-            header( 'Retry-After: 3600' );
-            wp_die(
-                '<h1>' . esc_html( $header ) . '</h1><p>' . esc_html( $message ) . '</p>',
-                esc_html( $header ),
-                [ 'response' => 503 ]
-            );
-        }
+		$maintenance = new Maintenance();
+		$maintenance->page();
     }
 
     public function add_admin_menu(): void
