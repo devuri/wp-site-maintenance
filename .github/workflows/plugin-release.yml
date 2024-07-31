@@ -1,4 +1,4 @@
-name: 🟢 Release
+name: Release
 on:
   pull_request:
     types:
@@ -9,7 +9,7 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy Release
+      - name: 🟢 Deploy Release
         uses: devuri/plugin-release-deploy-action@main
         with:
           php-version: '7.4'
