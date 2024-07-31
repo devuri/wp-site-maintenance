@@ -1,4 +1,4 @@
-name: Plugin Release
+name: 🟢 Release
 on:
   pull_request:
     types:
@@ -6,11 +6,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  if_merged:
-    if: github.event.pull_request.merged == true
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "The PR was merged"
   release:
     runs-on: ubuntu-latest
     steps:
@@ -25,4 +20,4 @@ jobs:
           svn-username: ${{ secrets.SVN_USERNAME }}
           svn-password: ${{ secrets.SVN_PASSWORD }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          dry-run: 'true' # This optional and defaults to 'false'
+          dry-run: 'false' # This optional and defaults to 'false'
