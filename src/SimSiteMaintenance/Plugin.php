@@ -25,7 +25,7 @@ class Plugin extends AbstractPlugin
     {
         $is_login_register_page = \in_array( $GLOBALS['pagenow'], [ 'wp-login.php', 'wp-register.php' ], true );
 
-        if ( $is_login_register_page ) {
+	if ( $is_login_register_page || current_user_can( 'manage_options' ) ) {
             return;
         }
 
