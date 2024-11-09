@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.12](https://github.com/devuri/wp-site-maintenance/compare/0.2.11...0.2.12) (2024-11-09)
+
+
+### Bug Fixes
+
+* always allow admin user Update Plugin.php ([4e8d9c9](https://github.com/devuri/wp-site-maintenance/commit/4e8d9c96b699508ceedf0823d2686e5915e952f3))
+
+
+### Miscellaneous Chores
+
+* Update readme.txt ([cb8807d](https://github.com/devuri/wp-site-maintenance/commit/cb8807db5e982088cfb98d74bc0d392a367d3051))
+* Update sim-site-maintenance.php ([794df9a](https://github.com/devuri/wp-site-maintenance/commit/794df9a7c20460e1e585394f4c6dab6e721549d5))
+
 ## [0.2.11](https://github.com/devuri/wp-site-maintenance/compare/0.2.10...0.2.11) (2024-07-31)
 
 
