@@ -9,7 +9,6 @@
         "ext-json": "*"
     },
     "require-dev": {
-        "devuri/wp-hook-scanner": "^0.1.2",
         "devuri/zipit": "^0.2.7",
         "ergebnis/composer-normalize": "^2.42",
         "fakerphp/faker": "^1.23",
