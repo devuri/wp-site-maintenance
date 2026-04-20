@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.1](https://github.com/devuri/wp-site-maintenance/compare/0.3.0...0.3.1) (2026-04-20)
+
+
+### Bug Fixes
+
+* 0.3.1 release ([7ef2023](https://github.com/devuri/wp-site-maintenance/commit/7ef20237b35ff7f93c513aa530d581fe9b75dfb7))
+* 0.3.1 release ([27a1d87](https://github.com/devuri/wp-site-maintenance/commit/27a1d87ab5cf2fab8efc5f6e214a7bbef91f048b))
+
+
+### Miscellaneous Chores
+
+* remove wp-hook-scanner ([a1671df](https://github.com/devuri/wp-site-maintenance/commit/a1671df6cfbcfab2f81a2199efec89007d27aa7b))
+
 ## [0.3.0](https://github.com/devuri/wp-site-maintenance/compare/0.2.12...0.3.0) (2026-04-20)
 
 
