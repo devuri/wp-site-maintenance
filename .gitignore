@@ -11,6 +11,7 @@ composer.lock
 
 ## PLUGIN FILES
 build/svn/
+build/sim-site-maintenance
 build/trunk/
 trunk/
 *.zip

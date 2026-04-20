@@ -1,0 +1,6 @@
+#!/bin/sh
+
+SCRIPT_DIR="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
+ROOT_DIR="$(CDPATH= cd -- "$SCRIPT_DIR/.." && pwd)"
+
+cp "$ROOT_DIR/build/composer.json" "$ROOT_DIR/build/sim-site-maintenance/"

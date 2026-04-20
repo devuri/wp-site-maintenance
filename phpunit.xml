@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit
-    bootstrap="tests/Unit/bootstrap.php"
+    bootstrap="tests/bootstrap.php"
     colors="true"
     verbose="true"
     convertErrorsToExceptions="true"
@@ -13,4 +13,3 @@
         </testsuite>
     </testsuites>
 </phpunit>
-
