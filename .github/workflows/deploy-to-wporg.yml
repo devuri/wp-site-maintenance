@@ -1,0 +1,32 @@
+name: Deploy to WordPress.org SVN
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Push to WordPress.org SVN
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+
+      - name: Build plugin
+        run: composer build
+
+      - name: Deploy to WordPress.org
+        uses: 10up/action-wordpress-plugin-deploy@stable
+        with:
+          plugin-slug: 'sim-site-maintenance'
+          build-dir: './build/sim-site-maintenance/'
+          zip-file: './build/sim-site-maintenance.zip'
+          deploy-to-wporg: 'true'
+        env:
+          SVN_USERNAME: ${{ secrets.WP_SVN_USERNAME }}
+          SVN_PASSWORD: ${{ secrets.WP_SVN_PASSWORD }}
