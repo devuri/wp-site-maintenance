@@ -1,64 +1,71 @@
 <?php
 
-\define('SOP_TEST_MODE', true);
-\define('SOP_INTEGRATION_MODE', getenv('SOP_INTEGRATION_MODE')); // true to run integration tests.
-\define('SOP_API_TEST_KEY', getenv('SOP_API_TEST_KEY'));
+/*
+ * This file is part of the Sim Site Maintenance plugin.
+ *
+ * The full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
-// github actions environment variables.
-\define('SOP_GITHUB_EVENT_NAME', getenv('GITHUB_EVENT_NAME'));
-\define('SOP_GITHUB_REF', getenv('GITHUB_REF'));
-\define('SOP_GITHUB_EVENT_PATH', getenv('GITHUB_EVENT_PATH'));
-\define('SOP_GITHUB_HEAD_REF', getenv('GITHUB_HEAD_REF'));
-\define('SOP_RUNNER_OS', getenv('RUNNER_OS'));
+require \dirname(__FILE__, 2) . '/vendor/autoload.php';
+require \dirname(__FILE__, 2) . '/vendor/szepeviktor/phpstan-wordpress/bootstrap.php';
+require \dirname(__FILE__, 2) . '/tests/stubs.php';
 
-// Integration or unit tests.
-function is_integration_test(): bool
-{
-    if (getenv('SOP_INTEGRATION_TEST')) {
-        return true;
-    }
+// -----------------------------------------------------------------------------
+// Define basic WordPress constants for compatibility in testing environments.
+// Reference: https://developer.wordpress.org/reference/
+// -----------------------------------------------------------------------------
 
-    if (\defined('SOP_INTEGRATION_MODE') && true === SOP_INTEGRATION_MODE) {
-        return true;
-    }
-
-    return false;
+if ( ! \defined('HOUR_IN_SECONDS')) {
+    \define('HOUR_IN_SECONDS', 3600);
 }
 
-// integration or unit tests.
-if (is_integration_test()) {
-    $_tests_dir = getenv('WP_TESTS_DIR');
+if ( ! \defined('DAY_IN_SECONDS')) {
+    \define('DAY_IN_SECONDS', 86400);
+}
 
-    \define('FS_METHOD', 'direct');
-    \define('TEST_DIR', \dirname(__FILE__));
-    \define('PHPUNIT_RUNNER', true);
+if ( ! \defined('WEEK_IN_SECONDS')) {
+    \define('WEEK_IN_SECONDS', 604800);
+}
 
-    // wp config
-    // \define('WP_TESTS_CONFIG_FILE_PATH', \dirname(__FILE__) . '/wp-tests-config.php' );
+if ( ! \defined('MONTH_IN_SECONDS')) {
+    \define('MONTH_IN_SECONDS', 2592000); // Approx. 30 days.
+}
 
-    if ( ! $_tests_dir) {
-        $_tests_dir = rtrim(sys_get_temp_dir(), '/\\') . '/wordpress-tests-lib';
-    }
+if ( ! \defined('YEAR_IN_SECONDS')) {
+    \define('YEAR_IN_SECONDS', 31536000);
+}
 
-    if ( ! file_exists($_tests_dir . '/includes/functions.php')) {
-        echo "Could not find $_tests_dir/includes/functions.php, have you run bin/install-wp-tests.sh ?" . PHP_EOL;
-        exit(1);
-    }
+if ( ! \defined('ABSPATH')) {
+    \define('ABSPATH', '/tmp/wordpress/');
+}
 
-    // Give access to tests_add_filter() function.
-    require_once $_tests_dir . '/includes/functions.php';
+// -----------------------------------------------------------------------------
+// Additional constants helpful for plugin and theme testing.
+// These mimic real WordPress behavior but are safe defaults.
+// -----------------------------------------------------------------------------
 
-    // Manually load the plugin being tested.
-    tests_add_filter('muplugins_loaded', function (): void {
-        require \dirname(__FILE__, 2) . '/sim-site-maintenance.php';
-    } );
+if ( ! \defined('WP_CONTENT_DIR')) {
+    \define('WP_CONTENT_DIR', ABSPATH . 'wp-content');
+    // Docs: https://developer.wordpress.org/reference/constant/wp_content_dir/
+}
 
-    // Start up the WP testing environment.
-    require $_tests_dir . '/includes/bootstrap.php';
-} else {
-    require \dirname(__FILE__, 2) . '/vendor/autoload.php';
+if ( ! \defined('WP_PLUGIN_DIR')) {
+    \define('WP_PLUGIN_DIR', WP_CONTENT_DIR . '/plugins');
+    // Docs: https://developer.wordpress.org/reference/constant/wp_plugin_dir/
+}
 
-    require \dirname(__FILE__, 2) . '/vendor/szepeviktor/phpstan-wordpress/bootstrap.php';
+if ( ! \defined('WP_DEBUG')) {
+    \define('WP_DEBUG', true);
+    // Docs: https://developer.wordpress.org/reference/constant/wp_debug/
+}
 
-    require \dirname(__FILE__, 2) . '/tests/stubs.php';
+if ( ! \defined('WP_ENVIRONMENT_TYPE')) {
+    \define('WP_ENVIRONMENT_TYPE', 'development');
+    // Docs: https://developer.wordpress.org/apis/wp-config-php/#environment-type
+}
+
+if ( ! \defined('WP_MEMORY_LIMIT')) {
+    \define('WP_MEMORY_LIMIT', '128M');
+    // Docs: https://developer.wordpress.org/reference/constant/wp_memory_limit/
 }

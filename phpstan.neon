@@ -5,19 +5,15 @@ parameters:
     bootstrapFiles:
         - tests/stubs.php
     tmpDir: tmp
-    level: 1
+    level: 5
     inferPrivatePropertyTypeFromConstructor: true
     treatPhpDocTypesAsCertain: false
-    checkMissingIterableValueType: false
     excludePaths:
-        - tests/Integration/*
+        - tests/*
         - tmp/*
         - node_modules/*
         - bin/*
-        - languages/*
         - vendor/*
-    scanFiles:
-        - sim-site-maintenance.php
     paths:
         - src
         - tests

@@ -1,16 +1,11 @@
 <?php
 
-namespace Tests\Unit;
+namespace SimSiteMaintenance\Tests\Unit;
 
 use Exception;
-use Tests\Base\UnitTest;
+use PHPUnit\Framework\TestCase;
 
-/**
- * @internal
- *
- * @coversNothing
- */
-class StarterTest extends UnitTest
+class StarterTest extends TestCase
 {
     /**
      * @param mixed $vid

@@ -10,8 +10,6 @@
 
 namespace SimSiteMaintenance;
 
-use Urisoft\AbstractPlugin;
-
 class Maintenance
 {
     private $custom_page_id;
