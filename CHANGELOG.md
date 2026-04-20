@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.0](https://github.com/devuri/wp-site-maintenance/compare/0.2.12...0.3.0) (2026-04-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* update version and secure settings
+
+### Bug Fixes
+
+* better zipit with single file support ([5ba232f](https://github.com/devuri/wp-site-maintenance/commit/5ba232fa97e2ce46f70c2a46673bc97f68149b85))
+* update version and secure settings ([35fd60e](https://github.com/devuri/wp-site-maintenance/commit/35fd60eb4f385083d3c9233ad71c90a3623146fd))
+
 ## [0.2.12](https://github.com/devuri/wp-site-maintenance/compare/0.2.11...0.2.12) (2024-11-09)
 
 
