@@ -1,0 +1,23 @@
+name: 🚀 Deploy Release
+
+on:
+  pull_request:
+    types: [closed]
+  workflow_dispatch:
+
+jobs:
+  release:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Deploy Release 🟢
+        uses: devuri/plugin-release-deploy-action@main
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          php-version: '8.1'
+          plugin-slug: 'sim-site-maintenance'
+          build-dir: './build/sim-site-maintenance/'
+          zip-file: './build/sim-site-maintenance.zip'
+          svn-username: ${{ secrets.WP_SVN_USERNAME }}
+          svn-password: ${{ secrets.WP_SVN_PASSWORD }}
