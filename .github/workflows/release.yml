@@ -21,3 +21,4 @@ jobs:
           zip-file: './build/sim-site-maintenance.zip'
           svn-username: ${{ secrets.WP_SVN_USERNAME }}
           svn-password: ${{ secrets.WP_SVN_PASSWORD }}
+          deploy-to-wporg: 'true'
