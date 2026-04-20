@@ -2,10 +2,10 @@
 Contributors: icelayer
 Donate link: https://urielwilson.com/
 Tags: maintenance, maintenance mode, under construction
-Requires at least: 4.0
-Tested up to: 6.6
-Requires PHP: 7.3
-Stable tag: 0.2.12
+Requires at least: 6.0
+Tested up to: 6.9
+Requires PHP: 7.4
+Stable tag: 0.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
