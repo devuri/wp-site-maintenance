@@ -42,7 +42,7 @@
             "@test",
             "@lint",
             "bin/gdep",
-			"composer install --no-dev",
+            "composer install --no-dev",
             "bin/zipit copy",
             "bin/zipit"
         ],
