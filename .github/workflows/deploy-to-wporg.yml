@@ -22,11 +22,8 @@ jobs:
 
       - name: Deploy to WordPress.org
         uses: 10up/action-wordpress-plugin-deploy@stable
-        with:
-          plugin-slug: 'sim-site-maintenance'
-          build-dir: './build/sim-site-maintenance/'
-          zip-file: './build/sim-site-maintenance.zip'
-          deploy-to-wporg: 'true'
         env:
           SVN_USERNAME: ${{ secrets.WP_SVN_USERNAME }}
           SVN_PASSWORD: ${{ secrets.WP_SVN_PASSWORD }}
+          SLUG: sim-site-maintenance
+          BUILD_DIR: ./build/sim-site-maintenance/
