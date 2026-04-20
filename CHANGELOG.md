@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.2](https://github.com/devuri/wp-site-maintenance/compare/0.3.1...0.3.2) (2026-04-20)
+
+
+### Bug Fixes
+
+* 0.3.2 update ([962f094](https://github.com/devuri/wp-site-maintenance/commit/962f09413e312e7a9cd4e3b902b697339fa8a553))
+* 0.3.2 update ([75405e0](https://github.com/devuri/wp-site-maintenance/commit/75405e01d735635f38b8a364160e496f36ab7e04))
+
 ## [0.3.1](https://github.com/devuri/wp-site-maintenance/compare/0.3.0...0.3.1) (2026-04-20)
 
 
