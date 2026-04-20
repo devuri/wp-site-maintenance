@@ -1,0 +1,19 @@
+{
+    "name": "devuri/sim-site-maintenance",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-only",
+    "description": "Puts the site in maintenance mode for all non-logged-in users.",
+    "require": {
+        "php": "^7.4 || ^8.0 || ^8.1",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "SimSiteMaintenance\\": "src/SimSiteMaintenance/"
+        },
+        "files": [
+            "src/SimSiteMaintenance/inc/helpers.php"
+        ]
+    }
+}

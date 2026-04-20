@@ -1,0 +1,45 @@
+#!/usr/bin/env php
+<?php
+
+$composerFile = dirname(__DIR__) . '/composer.json';
+$outputDir = dirname(__DIR__) . '/build';
+$outputFile = "$outputDir/composer.json";
+
+if (!file_exists($composerFile)) {
+    echo "Error: composer.json not found!\n";
+    exit(1);
+}
+
+// Create build directory
+if (!is_dir($outputDir)) {
+    mkdir($outputDir, 0755, true);
+}
+
+// Read and decode composer.json
+$composer = json_decode(file_get_contents($composerFile), true);
+
+if (!$composer) {
+    echo "Error: Invalid composer.json!\n";
+    exit(1);
+}
+
+// Extract only required fields
+$minimal = array_filter([
+    'name' => $composer['name'] ?? null,
+    'type' => $composer['type'] ?? null,
+    'license' => $composer['license'] ?? null,
+    'description' => $composer['description'] ?? null,
+    'authors' => $composer['authors'] ?? null,
+    'require' => $composer['require'] ?? null,
+    'autoload' => $composer['autoload'] ?? null,
+], fn($value) => $value !== null);
+
+// Write minimal composer.json
+file_put_contents(
+    $outputFile,
+    json_encode($minimal, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) . "\n"
+);
+
+echo "✓ Minimal composer.json created at $outputFile\n";
+echo "\nGenerated content:\n";
+echo file_get_contents($outputFile);
